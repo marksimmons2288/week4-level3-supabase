@@ -8,6 +8,7 @@ import TaskItem from "./TaskItem.jsx";
  *  - Fetching tasks from Supabase on mount.
  *  - Managing loading and error state for the list.
  *  - Rendering a list of TaskItem components.
+ * - TaskList fetches tasks from the "tasks" table in Supabase and displays them. Correlate each task to a TaskItem component.
  */
 function TaskList() {
   const [tasks, setTasks] = useState([]);
@@ -25,6 +26,7 @@ function TaskList() {
     //  function from supabase
     const { data, error: queryError } = await supabase
       .from('tasks')
+      // select all columns
       .select('*')
       .order("created_at", { ascending: false });
 
