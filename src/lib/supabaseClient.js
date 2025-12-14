@@ -1,6 +1,7 @@
 
 /**
- * Supabase client initialization.
+ * Info retrieved from client environment variables.
+ * Supabase client initialization
  *
  * This file creates a single shared Supabase client for the entire app.
  * We read the project URL and anon key from Vite environment variables.
