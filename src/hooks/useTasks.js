@@ -117,11 +117,11 @@ useEffect(() => {
     fetchTasks();
   }, [loadTasks]);
   
- /**
+ /** 
    * Optional: Supabase Realtime subscription.
    * This keeps tasks in sync across multiple tabs.
    * You can comment this out if you want to keep Day 4 simpler.
-   */
+   
   useEffect(() => {
     const channel = supabase
       .channel("public:tasks")
@@ -159,7 +159,7 @@ useEffect(() => {
       supabase.removeChannel(channel);
     };
   }, []);
-
+*/
 
   return {
     tasks,
