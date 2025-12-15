@@ -53,7 +53,7 @@ const loadTasks = useCallback(async () => {
       .select(); // Return the inserted row(s)
 
       if (insertError) {
-        //  eslint-disable-next-line no console
+      
         console.error(insertError);
         throw insertError;
       }
@@ -77,7 +77,7 @@ const loadTasks = useCallback(async () => {
     .eq('id', id);
     
     if (updateError) {
-        // eslint-disable-next-line no console
+  
       console.error(updateError);
       throw updateError;
     }
@@ -101,7 +101,7 @@ const loadTasks = useCallback(async () => {
       .eq('id', id);  
       
     if (deleteError) {
-        // eslint-disable-next-line no console
+
       console.error(deleteError);
       throw deleteError;
     }
