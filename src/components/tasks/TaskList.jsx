@@ -1,5 +1,6 @@
 
 import {useState, useMemo} from "react";
+import Spinner from 'react-bootstrap/Spinner';
 import TaskItem from "./TaskItem.jsx";
 import NewTaskForm from "./NewTaskForm.jsx";   
 import { useTasks } from "../../hooks/useTasks.js";    
@@ -70,7 +71,7 @@ function TaskList() {
 
   return (
     <section className="card">
-      <h2>Tasks</h2>
+      <h2> Tasks</h2>
 
       <NewTaskForm onAddTask={handleAddTask} />
 
@@ -108,9 +109,6 @@ function TaskList() {
             </button>
             </div>
 
-      {loading && <p>Loading tasks…</p>}
-      {error && <p className="error-text">{error}</p>}
-
       {!loading && !error && tasks.length === 0 && <p>No tasks yet.</p>}
 
       {totalTasks > 0 && (
@@ -118,17 +116,21 @@ function TaskList() {
           <strong>{totalTasks}</strong> tasks - <strong>{completedTasks}</strong> completed
         </p>
       )}
-
-      <ul className="task-list">
+      
+      {loading ? (
+      <Spinner animation="border"/>
+      ) : (
+        <ul className="task-list">
         {visibleTasks.map((task) => (
-          <TaskItem 
-          key={task.id} 
-          task={task} 
+          <TaskItem
+          key={task.id}
+          task={task}
           onToggleComplete={handleToggleComplete}
           onDelete={handleDeleteTask}
           />
         ))}
-      </ul>
+        </ul>
+      )}
     </section>
   );
 };
