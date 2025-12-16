@@ -1,7 +1,8 @@
-# React + Vite
-
+=======
+# React + Vite + Supabase Task Manager
+This is a simple task manager application built with React, VIte, and Supabase. It allows users to create, read, update, and delete tasks in a user-friendly interface.
+=======
 Check out the live demo [here] https://supabase-introduction.netlify.app/
-
 
 ## Installation Day-1
 1. Clone the Repo:
@@ -20,13 +21,9 @@ cp .env.example .env.local
 npm install
 ```
 
-- npm install
-
 4. Start the development server:
-```bash
-- npm run dev
-```
 
+- npm run dev
 
 ## Implement connection with Supabase on react Day-2
 
@@ -34,6 +31,7 @@ npm install
 
 ## Import react bootstrap to add loader Day-4
 
-## 
+## Add README.md and deploy Netilfy
+
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
