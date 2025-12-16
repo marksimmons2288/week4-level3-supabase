@@ -1,3 +1,4 @@
+=======
 # React + Vite + Supabase Task Manager
 This is a simple task manager application built with React, VIte, and Supabase. It allows users to create, read, update, and delete tasks in a user-friendly interface.
 =======
@@ -19,16 +20,10 @@ cp .env.example .env.local
 ```bash
 npm install
 ```
-2. Create a `.env.local` file based on the `.env example` file and fill in your Supabase credentials: .env.example .env.local
-
-3. Install dependencies:
-
-- npm install
 
 4. Start the development server:
 
 - npm run dev
-
 
 ## Implement connection with Supabase on react Day-2
 
