@@ -1,18 +1,24 @@
 # React + Vite + Supabase Task Manager
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a simple task manager application built with React, VIte, and Supabase. It allows users to create, read, update, and delete tasks in a user-friendly interface.
+=======
+Check out the live demo [here] https://supabase-introduction.netlify.app/
 
 ## Installation Day-1
-1. Clone the Repo
+1. Clone the Repo:
+```bash
+- git clone <repository-url>
+- cd <repository-directory>
+```
 
-- git clone repository
-- cd repository-directory
+2. Create a `.env.local` file based on the `.env example` file and fill in your Supabase credentials: 
+```bash
+cp .env.example .env.local
+```
 
+3. Install dependencies:
+```bash
+npm install
+```
 2. Create a `.env.local` file based on the `.env example` file and fill in your Supabase credentials: .env.example .env.local
 
 3. Install dependencies:
@@ -29,5 +35,8 @@ Currently, two official plugins are available:
 ## Implement add, update, and delete functionalities Day-3
 
 ## Import react bootstrap to add loader Day-4
+
+## Add README.md and deploy Netilfy
+
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
